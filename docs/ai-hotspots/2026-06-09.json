@@ -1,0 +1,143 @@
+{
+  "date": "2026-06-09",
+  "source": "https://aihot.virxact.com/",
+  "count": 27,
+  "hotspots": [
+    {
+      "title": "Google DeepMind：Blog（RSS）",
+      "link": "https://deepmind.google/blog/measuring-the-impact-of-learning-with-ai-in-sierra-leone-and-beyond",
+      "source": "article"
+    },
+    {
+      "title": "公众号：火山引擎",
+      "link": "https://mp.weixin.qq.com/s/toK_uIB9ECFHVaoCgK-w9Q",
+      "source": "article"
+    },
+    {
+      "title": "公众号：百度智能云（文心）",
+      "link": "https://mp.weixin.qq.com/s/lv99XfrRtMMgiOflcT67VA",
+      "source": "article"
+    },
+    {
+      "title": "Kimi.ai",
+      "link": "https://x.com/Kimi_Moonshot/status/2064311212243120459",
+      "source": "article"
+    },
+    {
+      "title": "Hugging Face：Blog（RSS）",
+      "link": "https://huggingface.co/blog/mishig/spaces-agents-md",
+      "source": "article"
+    },
+    {
+      "title": "Tencent Hy",
+      "link": "https://x.com/TencentHunyuan/status/2064312869827809702",
+      "source": "article"
+    },
+    {
+      "title": "公众号：可灵AI（快手·视频）",
+      "link": "https://mp.weixin.qq.com/s/d0c13s2tpsSnpgk3bQk04Q",
+      "source": "article"
+    },
+    {
+      "title": "Bloomberg：Technology（RSS）",
+      "link": "https://www.bloomberg.com/news/articles/2026-06-09/taiwan-mulls-curbs-on-ai-chip-exports-to-china-to-align-with-us",
+      "source": "article"
+    },
+    {
+      "title": "Alibaba Cloud",
+      "link": "https://x.com/alibaba_cloud/status/2064288633188708411",
+      "source": "article"
+    },
+    {
+      "title": "公众号：通义实验室（千问）",
+      "link": "https://mp.weixin.qq.com/s/bYEZL9LM3daNP9tZReqNwg",
+      "source": "article"
+    },
+    {
+      "title": "HuggingFace Daily Papers（社区热门论文）",
+      "link": "https://arxiv.org/abs/2606.08960",
+      "source": "article"
+    },
+    {
+      "title": "MarkTechPost（RSS）",
+      "link": "https://www.marktechpost.com/2026/06/09/nvidia-cutile-python-tutorial-building-tiled-gpu-kernels-for-vector-addition-matrix-addition-and-matrix-multiplication-in-colab",
+      "source": "article"
+    },
+    {
+      "title": "SiliconFlow",
+      "link": "https://x.com/SiliconFlowAI/status/2064261826083512554",
+      "source": "article"
+    },
+    {
+      "title": "IT之家（RSS）",
+      "link": "https://www.ithome.com/0/961/868.htm",
+      "source": "article"
+    },
+    {
+      "title": "公众号：小米 MiMo",
+      "link": "https://mp.weixin.qq.com/s/EZvmrx8xfM9MZNCMDwImFQ",
+      "source": "article"
+    },
+    {
+      "title": "Rohan Paul",
+      "link": "https://x.com/rohanpaul_ai/status/2064165951936094364",
+      "source": "article"
+    },
+    {
+      "title": "Berryxia.AI",
+      "link": "https://x.com/berryxia/status/2064155452934639718",
+      "source": "article"
+    },
+    {
+      "title": "meng shao",
+      "link": "https://x.com/shao__meng/status/2064144978792878348",
+      "source": "article"
+    },
+    {
+      "title": "Claude",
+      "link": "https://x.com/claudeai/status/2064139073590104402",
+      "source": "article"
+    },
+    {
+      "title": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "link": "https://developer.apple.com/documentation/coreai",
+      "source": "article"
+    },
+    {
+      "title": "Claude：Blog（网页）",
+      "link": "https://claude.com/blog/claude-for-foundation-models",
+      "source": "article"
+    },
+    {
+      "title": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+      "link": "https://openai.com/index/openai-submits-confidential-s-1",
+      "source": "article"
+    },
+    {
+      "title": "Apple Machine Learning Research（RSS）",
+      "link": "https://machinelearning.apple.com/research/introducing-third-generation-of-apple-foundation-models",
+      "source": "article"
+    },
+    {
+      "title": "ViggleAI",
+      "link": "https://x.com/ViggleAI/status/2064083087806390319",
+      "source": "article"
+    },
+    {
+      "title": "OpenRouter：Announcements（RSS）",
+      "link": "https://openrouter.ai/blog/human-oversight-eu-ai-act-compliance-agent-sdk",
+      "source": "article"
+    },
+    {
+      "title": "Apple：Newsroom（RSS）",
+      "link": "https://www.apple.com/newsroom/2026/06/due-to-dma-siri-ai-delayed-in-eu-for-ios-27-and-ipados-27",
+      "source": "article"
+    },
+    {
+      "title": "Anthropic",
+      "link": "https://x.com/AnthropicAI/status/2064054837294354677",
+      "source": "article"
+    }
+  ],
+  "crawled_at": "2026-06-09T21:37:32.896869"
+}
