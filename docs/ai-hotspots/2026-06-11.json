@@ -1,0 +1,345 @@
+{
+  "date": "2026-06-11",
+  "sources": [
+    "aihot.virxact.com",
+    "arXiv cs.CR",
+    "GitHub Trending",
+    "Hacker News"
+  ],
+  "count": 54,
+  "ai_count": 14,
+  "security_count": 7,
+  "hotspots": [
+    {
+      "title": "Claude Fable 5 和 Claude Mythos 5",
+      "link": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "DiffusionGemma：文本生成速度提升4倍的开源扩散模型",
+      "link": "https://deepmind.google/blog/diffusiongemma-4x-faster-text-generation",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "Gemini 3.5 Live Translate 发布",
+      "link": "https://x.com/GoogleDeepMind/status/2064366504745828689",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "Anthropic CEO Dario Amodei 发文呼吁缩小AI政策差距",
+      "link": "https://x.com/AnthropicAI/status/2064783418844762489",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "突发：Google 因模型幻觉被判负有法律责任",
+      "link": "https://garymarcus.substack.com/p/breaking-google-liable-for-hallucinations",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "通过 Oracle 云承诺访问 OpenAI 模型和 Codex",
+      "link": "https://openai.com/index/openai-on-oracle-cloud",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "Gemini 2.5 Flash API - 定价、快速入门与提供商比较",
+      "link": "https://openrouter.ai/blog/gemini-25-flash-api-pricing-quickstart-provider-comparison",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "Cursor Bugbot 更新：速度提升超 3 倍、成本降低 22%、发现更多 Bug",
+      "link": "https://cursor.com/blog/bugbot-updates-june-2026",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "Apache Burr：构建可靠的人工智能代理和应用程序",
+      "link": "https://burr.apache.org/",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "Google Research提出审计机器遗忘新框架",
+      "link": "https://research.google/blog/new-framework-for-auditing-machine-unlearning",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "eToro AI 智能体 Tori 集成 SpaceXAI 文本模型实现实时市场情绪分析",
+      "link": "https://x.ai/news/grok-etoro",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "小米发布 MiMo Code V0.1 开源终端 AI 编程助手",
+      "link": "https://x.com/XiaomiMiMo/status/2064772356443394441",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "豆包AI误导用户损失600元，还帮用户起诉自己",
+      "link": "https://x.com/thexpin/status/2064772489310527713",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "Anthropic 研究：AI 数小时内即可从安全补丁构建漏洞利用",
+      "link": "https://the-decoder.com/anthropic-study-shows-ai-needs-hours-not-weeks-to-build-exploits-from-security-patches",
+      "source": "AI热点聚合",
+      "tag": "security"
+    },
+    {
+      "title": "DeLM：去中心化多智能体系统框架",
+      "link": "https://arxiv.org/abs/2606.10662",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "回顾与 Steve Eisman 的访谈，以及可能的关键新闻",
+      "link": "https://garymarcus.substack.com/p/breaking-news-and-how-the-end-might",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "通过语言服务器为 GitHub Copilot CLI 提供真正的代码智能",
+      "link": "https://github.blog/ai-and-ml/github-copilot/give-github-copilot-cli-real-code-intelligence-with-language-servers",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "Google将保存用户的Lens图片、Search Live录音和Translate音频用于AI训练",
+      "link": "https://www.theverge.com/tech/947836/google-search-privacy-settings-images-audio",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "毕业典礼频现&quot;谈 AI 色变&quot;，微软总裁史密斯呼吁行业必须回应公众担忧",
+      "link": "https://www.ithome.com/0/962/680.htm",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "走进 Anthropic：这家估值 9650 亿美元的 AI 巨头",
+      "link": "https://www.bloomberg.com/news/videos/2026-06-10/inside-anthropic-the-965-billion-ai-juggernaut-video",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "百度百舸联合复旦提出LU-KV框架，被ICML 2026录用",
+      "link": "https://mp.weixin.qq.com/s/oKhawmph49YYPR63T-ekaw",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "华为云发布全球首个端到端具身AI平台CloudRobo",
+      "link": "https://x.com/HuaweiCloud1/status/2064637581652852831",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "谷歌 DeepMind 经济学家伊马斯：尚未发现 AI 造成岗位流失的证据，跟风裁员恐适得其反",
+      "link": "https://www.ithome.com/0/962/515.htm",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "快手开源 Kwai Keye-VL-2.0-30B-A3B：面向长视频理解与智能体智能的 MoE 多模态模型",
+      "link": "https://arxiv.org/abs/2606.10651",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "摩尔线程开源 MusaCoder 代码大模型，9B/27B 参数基于国产 GPU 全链路训练",
+      "link": "https://www.ithome.com/0/962/509.htm",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "工信部印发《&quot;人工智能+信息通信&quot;创新发展实施意见》",
+      "link": "https://www.ithome.com/0/962/456.htm",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "用好 Claude Design 的一些经验",
+      "link": "https://x.com/dotey/status/2064601571397185639",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "亚马逊的大规模扁平化数据中心网络",
+      "link": "https://perspectives.mvdirona.com/2026/06/flat-datacenter-networks-at-scale",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "谷歌财务担保支撑 Anthropic 350 亿美元芯片租赁交易",
+      "link": "https://www.bloomberg.com/news/videos/2026-06-10/google-s-backstops-underpin-35-bln-anthropic-chip-deal-video",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "2026年高考，跟着千问，选好志愿！",
+      "link": "https://mp.weixin.qq.com/s/4fovMM29x8tJ2E25kidl1A",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "混合LLM中的注意力失忆：CoT微调破坏长距离召回及修复方法",
+      "link": "https://arxiv.org/abs/2606.11052",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "Flow-DPPO： 面向流匹配模型的散度近端策略优化",
+      "link": "https://arxiv.org/abs/2606.11025",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "火山方舟版权商业化平台上线，周星驰比高集团三大电影IP首批入驻",
+      "link": "https://mp.weixin.qq.com/s/g3DxNO_3aYI4g26gQ2Yvig",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "欧盟发布临时措施，要求 Meta 向第三方 AI 助手免费开放 WhatsApp",
+      "link": "https://www.ithome.com/0/962/206.htm",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "Text-To-Lottie：Agent Skill + 本地预览 Harness，让 Agent 生成 Lottie 动画并实时验收",
+      "link": "https://x.com/shao__meng/status/2064508455051043008",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "在 AgentsView 中为 Claude Fable 5 设置自定义价格",
+      "link": "https://simonwillison.net/2026/Jun/9/agentsview-custom-model-price",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "[arXiv CR] Safecloud: A Distributed, Encrypted Storage Cloud for Streaming",
+      "link": "http://rss.arxiv.org/rss/cs.CR",
+      "source": "arXiv cs.CR",
+      "summary": "cs.CR updates on the arXiv.org e-print archive.",
+      "tag": "security"
+    },
+    {
+      "title": "[arXiv CR] IDP-Bench: Benchmarking ability of LLMs to protect personal information in interdependent privacy contexts",
+      "link": "https://arxiv.org/abs/2606.09870",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2606.09870v1 Announce Type: new \nAbstract: We present Safecloud, a distributed, encrypted, self-pricing storage and streaming network whose storage and routing nodes never see plaintext and neve",
+      "tag": "security"
+    },
+    {
+      "title": "[arXiv CR] Bypassing Copyright Protection in Diffusion-based Customization via Two-Stage Latent Feature Optimization",
+      "link": "https://arxiv.org/abs/2606.09908",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2606.09908v1 Announce Type: new \nAbstract: Large language models (LLMs) are becoming widely deployed as personal AI assistants with access to sensitive user data, making privacy a major challeng",
+      "tag": "security"
+    },
+    {
+      "title": "[arXiv CR] GitInject: Real-World Prompt Injection Attacks in AI-Powered CI/CD Pipelines",
+      "link": "https://arxiv.org/abs/2606.09909",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2606.09909v1 Announce Type: new \nAbstract: With the growing concerns over copyright infringement in diffusion-based customization, adversarial attacks have emerged as a prominent defense strateg",
+      "tag": "security"
+    },
+    {
+      "title": "[arXiv CR] The Chronicles of Radio Frequency Fingerprinting",
+      "link": "https://arxiv.org/abs/2606.09935",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2606.09935v1 Announce Type: new \nAbstract: AI-powered agents are increasingly embedded in continuous integration and continuous delivery/deployment (CI/CD) pipelines to autonomously review pull ",
+      "tag": "security"
+    },
+    {
+      "title": "[arXiv CR] The Human Vulnerabilities &amp; Exploits (HVE) Framework",
+      "link": "https://arxiv.org/abs/2606.10031",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2606.10031v1 Announce Type: new \nAbstract: Radio Frequency Fingerprinting (RFF) has evolved from an early idea for radar emitter identification into a broad research field for wireless device id",
+      "tag": "security"
+    },
+    {
+      "title": "[HN] 3. Show HN: Extend UI – 面向现代文档应用的开源 UI 套件",
+      "link": "https://www.extend.ai/ui",
+      "source": "Hacker News (buzzing.cc)",
+      "tag": "tech"
+    },
+    {
+      "title": "[HN] www.extend.ai)00:09",
+      "link": "https://www.extend.ai/ui",
+      "source": "Hacker News (buzzing.cc)",
+      "tag": "tech"
+    },
+    {
+      "title": "[HN] 5. 关于人工智能指数增长的政策",
+      "link": "https://darioamodei.com/post/policy-on-the-ai-exponential",
+      "source": "Hacker News (buzzing.cc)",
+      "tag": "tech"
+    },
+    {
+      "title": "[HN] darioamodei.com)02:36",
+      "link": "https://darioamodei.com/post/policy-on-the-ai-exponential",
+      "source": "Hacker News (buzzing.cc)",
+      "tag": "tech"
+    },
+    {
+      "title": "[HN] 8. Anthropic 的模型命名法：外推分析",
+      "link": "https://samwilkinson.io/posts/2026-06-09-anthropics-model-naming-extrapolated",
+      "source": "Hacker News (buzzing.cc)",
+      "tag": "tech"
+    },
+    {
+      "title": "[HN] samwilkinson.io)02:45",
+      "link": "https://samwilkinson.io/posts/2026-06-09-anthropics-model-naming-extrapolated",
+      "source": "Hacker News (buzzing.cc)",
+      "tag": "tech"
+    },
+    {
+      "title": "[HN] 11. Claude Desktop 启动了一台虚拟机，且无法停止它",
+      "link": "https://github.com/anthropics/claude-code/issues/29045",
+      "source": "Hacker News (buzzing.cc)",
+      "tag": "ai"
+    },
+    {
+      "title": "[HN] github.com)01:11",
+      "link": "https://github.com/anthropics/claude-code/issues/29045",
+      "source": "Hacker News (buzzing.cc)",
+      "tag": "tech"
+    },
+    {
+      "title": "[HN] 13. 一笔0.01欧元的银行转账可能危及银行AI代理",
+      "link": "https://blue41.com/blog/how-we-helped-bunq-secure-their-financial-ai-assistant/",
+      "source": "Hacker News (buzzing.cc)",
+      "tag": "tech"
+    },
+    {
+      "title": "[HN] blue41.com)06-10",
+      "link": "https://blue41.com/blog/how-we-helped-bunq-secure-their-financial-ai-assistant/",
+      "source": "Hacker News (buzzing.cc)",
+      "tag": "tech"
+    },
+    {
+      "title": "[HN] 15. DiffusionGemma：文本生成速度提升4倍",
+      "link": "https://blog.google/innovation-and-ai/technology/developers-tools/diffusion-gemma-faster-text-generation/",
+      "source": "Hacker News (buzzing.cc)",
+      "tag": "tech"
+    },
+    {
+      "title": "[HN] blog.google)00:09",
+      "link": "https://blog.google/innovation-and-ai/technology/developers-tools/diffusion-gemma-faster-text-generation/",
+      "source": "Hacker News (buzzing.cc)",
+      "tag": "tech"
+    }
+  ],
+  "crawled_at": "2026-06-11T07:33:09.885860"
+}
