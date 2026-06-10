@@ -1,176 +1,333 @@
 #!/usr/bin/env python3
-"""AI 热点每日抓取 + 蒙多学习引擎
+"""AI + 网络安全 热点每日抓取 — 蒙多学习引擎 v2
 
-每日自动抓取 https://aihot.virxact.com/ 的最新 AI 热点，
-提取有价值内容，保存到 docs/ai-hotspots/ 目录。
+多源融合：
+  - aihot.virxact.com (AI 热点聚合)
+  - arXiv cs.CR 最新安全论文
+  - GitHub Trending (AI/ML + Security 仓库)
+  - Hacker News via buzzing.cc (AI/安全过滤)
 
 用法：
-    python tools/ai-hotspot-crawler.py          # 手动执行
-    # 或通过 CronCreate 定时任务自动执行
+    python tools/ai-hotspot-crawler.py
 """
 
 import json
-import os
+import re
 import sys
 import io
 from datetime import datetime
 from pathlib import Path
 
-# Windows 编码修复
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
 sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8', errors='replace')
 
-# 项目根目录
 PROJECT_ROOT = Path(__file__).parent.parent
 OUTPUT_DIR = PROJECT_ROOT / "docs" / "ai-hotspots"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-
-def crawl_ai_hotspots():
-    """抓取 AI 热点页面"""
+try:
     from scrapling.fetchers import Fetcher
+    USE_SCRAPLING = True
+except ImportError:
+    USE_SCRAPLING = False
 
-    url = "https://aihot.virxact.com/"
-    print(f"[{datetime.now():%Y-%m-%d %H:%M}] 正在抓取 {url}")
 
+def _to_str(page) -> str:
+    """统一 str 输出"""
+    if page is None:
+        return ""
+    if isinstance(page, str):
+        return page
+    if isinstance(page, bytes):
+        return page.decode('utf-8', errors='replace')
+    body = getattr(page, 'body', None)
+    if body is None:
+        body = getattr(page, 'text', '') or str(page)
+    return _to_str(body)
+
+
+def _fetch(url, timeout=30):
+    """统一抓取"""
+    if USE_SCRAPLING:
+        try:
+            return _to_str(Fetcher.get(url, timeout=timeout))
+        except Exception:
+            pass
     try:
-        page = Fetcher.get(url, timeout=30)
+        import requests as req
+        resp = req.get(url, headers={
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+        }, timeout=timeout)
+        resp.raise_for_status()
+        return resp.text or ""
     except Exception as e:
-        print(f"Fetcher 失败，尝试 StealthyFetcher: {e}")
-        from scrapling.fetchers import StealthyFetcher
-        page = StealthyFetcher.fetch(url, headless=True, timeout=60)
+        print(f"  [fetch err] {url}: {e}")
+        return ""
 
-    # 提取热点条目
-    hotspots = []
 
-    # 尝试多种选择器提取内容
-    selectors = [
-        ".item", ".card", ".news-item", ".hot-item",
-        "article", ".post", ".entry", ".list-item",
-        "[class*='item']", "[class*='card']", "[class*='news']",
-        "li a", ".content a"
-    ]
+# ─── 抓取器 ───
 
-    for selector in selectors:
-        items = page.css(selector)
-        if items and len(items) > 3:
-            print(f"  使用选择器 '{selector}' 找到 {len(items)} 条")
-            for item in items:
-                title = item.css("::text").get("").strip()
-                link = item.attrib.get("href", "")
-                if not link:
-                    a_tag = item.css("a")
-                    if a_tag:
-                        link = a_tag[0].attrib.get("href", "")
+def crawl_aihot() -> list:
+    """抓取 aihot.virxact.com"""
+    print(f"  🔥 aihot...", end=' ')
+    body = _fetch("https://aihot.virxact.com/")
+    if not body:
+        print("无响应")
+        return []
 
-                if title and len(title) > 5:
-                    hotspots.append({
-                        "title": title[:200],
-                        "link": link,
-                        "source": selector
-                    })
-            break
+    items = []
+    # 尝试提取所有链接+文字
+    # aihot 的 article 标签
+    for m in re.finditer(r'<(?:article|div|li)[^>]*>.*?<a[^>]+href="([^"]+)"[^>]*>([^<]{8,200})</a>', body, re.DOTALL):
+        link, title = m.group(1), m.group(2).strip()
+        if title and len(title) >= 8:
+            items.append({'title': title[:200], 'link': link, 'source': 'AI热点聚合'})
 
-    # 如果上面没找到，尝试通用提取
-    if not hotspots:
-        print("  使用通用提取模式")
-        all_links = page.css("a")
-        for a in all_links:
-            title = a.css("::text").get("").strip()
-            link = a.attrib.get("href", "")
-            if title and len(title) > 10 and link:
-                hotspots.append({
-                    "title": title[:200],
-                    "link": link,
-                    "source": "generic"
-                })
+    # 全局兜底
+    if not items:
+        for m in re.finditer(r'<a[^>]+href="(https?://[^"]+)"[^>]*>([^<]{10,200})</a>', body):
+            link, title = m.group(1), m.group(2).strip()
+            skip_words = ['首页', '关于', '登录', '注册', '隐私', 'Home', 'About', 'Login', 'Skip']
+            if not any(w in title for w in skip_words):
+                items.append({'title': title[:200], 'link': link, 'source': 'AI热点聚合'})
 
     # 去重
     seen = set()
-    unique_hotspots = []
-    for h in hotspots:
-        key = h["title"][:50]
-        if key not in seen:
-            seen.add(key)
-            unique_hotspots.append(h)
+    out = []
+    for h in items[:40]:
+        k = h['title'][:60]
+        if k not in seen:
+            seen.add(k)
+            out.append(h)
 
-    print(f"  共提取 {len(unique_hotspots)} 条热点")
-    return unique_hotspots
+    print(f"{len(out)}条")
+    return out
 
 
-def save_daily_hotspots(hotspots):
-    """保存每日热点到文件"""
+def crawl_github_trending() -> list:
+    """抓 GitHub Trending 中 AI/Security 相关仓库"""
+    print(f"  📦 GitHub Trending...", end=' ')
+
+    ai_kw = ['ai', 'llm', 'ml', 'gpt', 'neural', 'transformer', 'deep', 'model',
+             'agent', 'rag', 'vector', 'embedding', 'fine-tune', 'langchain',
+             'openai', 'anthropic', 'claude', 'gemini', 'diffusion']
+    sec_kw = ['security', 'exploit', 'vuln', 'cve', 'hack', 'pentest', 'fuzz',
+              'crypto', 'reverse', 'malware', 'forensic', 'scan', 'redteam',
+              'pentest', 'bugbounty', 'osint', 'forensics']
+
+    items = []
+    for lang in ['python', 'go']:
+        body = _fetch(f"https://github.com/trending/{lang}?since=daily")
+        if not body:
+            continue
+
+        # 提取仓库
+        for m in re.finditer(
+            r'<h2[^>]*>\s*<a[^>]+href="(/[^/]+/[^"]+)"[^>]*>\s*([^<]+?)\s*/\s*([^<]+?)</a>',
+            body
+        ):
+            path, owner, repo = m.group(1), m.group(2).strip(), m.group(3).strip()
+            full_name = f"{owner}/{repo}"
+            combined = full_name.lower()
+
+            tag = None
+            if any(k in combined for k in ai_kw):
+                tag = 'ai'
+            elif any(k in combined for k in sec_kw):
+                tag = 'security'
+            else:
+                continue
+
+            items.append({
+                'title': f"[GitHub Trend] {full_name}",
+                'link': f"https://github.com{path}",
+                'source': f'GitHub Trending ({lang})',
+                'tag': tag,
+            })
+
+    # 去重
+    seen = set()
+    out = []
+    for h in items[:15]:
+        k = h['title'][:80]
+        if k not in seen:
+            seen.add(k)
+            out.append(h)
+
+    ai_n = sum(1 for h in out if h.get('tag') == 'ai')
+    sec_n = sum(1 for h in out if h.get('tag') == 'security')
+    print(f"{len(out)}个 (AI:{ai_n} 安全:{sec_n})")
+    return out
+
+
+def crawl_arxiv_cr() -> list:
+    """抓取 arXiv cs.CR 最新安全论文"""
+    print(f"  📄 arXiv cs.CR...", end=' ')
+
+    body = _fetch("https://rss.arxiv.org/rss/cs.CR")
+    if not body:
+        print("无响应")
+        return []
+
+    titles = re.findall(r'<title[^>]*>([^<]+)</title>', body)
+    links = re.findall(r'<link[^>]*>(https?://[^<]+)</link>', body)
+    descs = re.findall(r'<description[^>]*>([^<]+)</description>', body)
+
+    items = []
+    for i, t in enumerate(titles[1:7]):
+        link = links[i] if i < len(links) else ''
+        desc = descs[i] if i < len(descs) else ''
+        if not t or len(t) < 10:
+            continue
+        items.append({
+            'title': f"[arXiv CR] {t.strip()[:180]}",
+            'link': link,
+            'source': 'arXiv cs.CR',
+            'summary': desc.strip()[:200],
+            'tag': 'security',
+        })
+
+    print(f"{len(items)}篇")
+    return items
+
+
+def crawl_buzzingcc() -> list:
+    """抓取 Hacker News via buzzing.cc（过滤 AI+安全）"""
+    print(f"  🗞️  Hacker News...", end=' ')
+
+    body = _fetch("https://hn.buzzing.cc/")
+    if not body:
+        print("无响应")
+        return []
+
+    kw = ['ai', 'llm', 'gpt', 'openai', 'claude', 'model', 'agent', 'chatgpt',
+          'security', 'hack', 'vuln', 'exploit', 'cve', 'breach', 'ransomware',
+          'malware', 'privacy', 'encrypt', '密码', '安全', '漏洞', '模型',
+          'deepseek', 'gemini', 'anthropic', 'mcp', 'rag', 'vector']
+
+    items = []
+    for m in re.finditer(r'<a[^>]+href="(https?://[^"]+)"[^>]*>(.{15,200})</a>', body):
+        link, title = m.group(1), m.group(2).strip()
+        title = re.sub(r'<[^>]+>', '', title)
+        combined = f"{title} {link}".lower()
+
+        if any(k in combined for k in kw) and len(title) >= 10:
+            items.append({
+                'title': f"[HN] {title[:180]}",
+                'link': link,
+                'source': 'Hacker News (buzzing.cc)',
+            })
+
+    # 去重
+    seen = set()
+    out = []
+    for h in items[:12]:
+        k = h['title'][:70]
+        if k not in seen:
+            seen.add(k)
+            out.append(h)
+
+    print(f"{len(out)}条")
+    return out
+
+
+# ─── 主流程 ───
+
+def main():
+    print("=" * 55)
+    print(f"[{datetime.now():%Y-%m-%d %H:%M}] AI + 网络安全 热点抓取")
+    print("=" * 55)
+
+    all_hotspots = []
+    all_hotspots.extend(crawl_aihot())
+    all_hotspots.extend(crawl_github_trending())
+    all_hotspots.extend(crawl_arxiv_cr())
+    all_hotspots.extend(crawl_buzzingcc())
+
+    # 全局去重
+    seen = set()
+    unique = []
+    for h in all_hotspots:
+        k = h['title'][:60]
+        if k not in seen:
+            seen.add(k)
+            unique.append(h)
+
+    # 标签分配（无 tag 的自动分类）
+    for h in unique:
+        if 'tag' not in h:
+            t = h['title'].lower()
+            if any(k in t for k in ['cve', 'exploit', 'vuln', 'hack', 'malware',
+                                     'ransomware', 'breach', '安全', '攻击']):
+                h['tag'] = 'security'
+            elif any(k in t for k in ['llm', 'gpt', 'model', 'agent', 'transformer',
+                                       'ai ', 'openai', 'claude', 'deepseek']):
+                h['tag'] = 'ai'
+            else:
+                h['tag'] = 'tech'
+
+    ai_n = sum(1 for h in unique if h.get('tag') == 'ai')
+    sec_n = sum(1 for h in unique if h.get('tag') == 'security')
+
+    print(f"\n{'=' * 55}")
+    print(f"去重总计: {len(unique)} 条 (🤖 AI: {ai_n} | 🔒 安全: {sec_n})")
+
+    if not unique:
+        print("\n  ⚠ 未抓取到热点")
+        return 1
+
+    # 保存 JSON
     today = datetime.now().strftime("%Y-%m-%d")
-    output_file = OUTPUT_DIR / f"{today}.json"
-
     data = {
         "date": today,
-        "source": "https://aihot.virxact.com/",
-        "count": len(hotspots),
-        "hotspots": hotspots,
+        "sources": ["aihot.virxact.com", "arXiv cs.CR", "GitHub Trending", "Hacker News"],
+        "count": len(unique),
+        "ai_count": ai_n,
+        "security_count": sec_n,
+        "hotspots": unique,
         "crawled_at": datetime.now().isoformat()
     }
 
-    with open(output_file, "w", encoding="utf-8") as f:
+    fpath = OUTPUT_DIR / f"{today}.json"
+    with open(fpath, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
+    print(f"已保存: {fpath}")
 
-    print(f"  已保存到 {output_file}")
-    return output_file
-
-
-def update_hotspot_index():
-    """更新热点索引文件"""
-    index_file = OUTPUT_DIR / "index.json"
-    all_files = sorted(OUTPUT_DIR.glob("*.json"), reverse=True)
-
+    # 更新索引
     index = []
-    for f in all_files[:30]:  # 保留最近30天
-        if f.name == "index.json":
+    for f in sorted(OUTPUT_DIR.glob("*.json"), reverse=True)[:30]:
+        if f.name == 'index.json':
             continue
-        with open(f, "r", encoding="utf-8") as fp:
-            data = json.load(fp)
-            index.append({
-                "date": data.get("date", f.stem),
-                "count": data.get("count", 0),
-                "file": f.name
-            })
+        with open(f, 'r', encoding='utf-8') as fp:
+            d = json.load(fp)
+        index.append({
+            "date": d.get("date", f.stem),
+            "count": d.get("count", 0),
+            "ai_count": d.get("ai_count", 0),
+            "security_count": d.get("security_count", 0),
+            "file": f.name
+        })
 
-    with open(index_file, "w", encoding="utf-8") as f:
+    with open(OUTPUT_DIR / "index.json", "w", encoding='utf-8') as f:
         json.dump({"updated_at": datetime.now().isoformat(), "days": index}, f, ensure_ascii=False, indent=2)
+    print(f"索引已更新 ({len(index)} 天记录)")
 
-    print(f"  索引已更新，共 {len(index)} 天记录")
+    # 速览输出
+    print(f"\n{'=' * 55}")
+    print("今日速览 (Top 8 AI + Top 8 安全)")
+    print(f"{'=' * 55}")
 
+    ai = [h for h in unique if h.get('tag') == 'ai']
+    sec = [h for h in unique if h.get('tag') == 'security']
 
-def update_webpage():
-    """更新网页"""
-    import subprocess
-    script = PROJECT_ROOT / "tools" / "update-hotspot-page.py"
-    if script.exists():
-        subprocess.run([sys.executable, str(script)], cwd=str(PROJECT_ROOT))
-
-
-def main():
-    """主函数"""
-    print("=" * 50)
-    print("AI 热点每日抓取 - 蒙多学习引擎")
-    print("=" * 50)
-
-    hotspots = crawl_ai_hotspots()
-
-    if not hotspots:
-        print("  未抓取到任何热点，可能网站结构变化")
-        return 1
-
-    save_daily_hotspots(hotspots)
-    update_hotspot_index()
-    update_webpage()
-
-    # 输出摘要供蒙多分析
-    print("\n" + "=" * 50)
-    print("今日热点摘要（供蒙多学习）：")
-    print("=" * 50)
-    for i, h in enumerate(hotspots[:20], 1):
-        print(f"  {i}. {h['title'][:80]}")
+    if ai:
+        print(f"\n🤖 AI 前沿 ({len(ai)}条):")
+        for i, h in enumerate(ai[:8], 1):
+            print(f"  {i}. {h['title'][:90]}")
+    if sec:
+        print(f"\n🔒 网络安全 ({len(sec)}条):")
+        for i, h in enumerate(sec[:8], 1):
+            print(f"  {i}. {h['title'][:90]}")
 
     return 0
 

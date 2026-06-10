@@ -1,133 +1,339 @@
 {
   "date": "2026-06-10",
-  "source": "https://aihot.virxact.com/",
-  "count": 25,
+  "sources": [
+    "aihot.virxact.com",
+    "arXiv cs.CR",
+    "GitHub Trending",
+    "Hacker News"
+  ],
+  "count": 53,
+  "ai_count": 17,
+  "security_count": 6,
   "hotspots": [
     {
-      "title": "Bloomberg：Technology（RSS）",
-      "link": "https://www.bloomberg.com/news/videos/2026-06-10/inside-anthropic-the-965-billion-ai-juggernaut-video",
-      "source": "article"
-    },
-    {
-      "title": "公众号：百度智能云（文心）",
-      "link": "https://mp.weixin.qq.com/s/oKhawmph49YYPR63T-ekaw",
-      "source": "article"
-    },
-    {
-      "title": "Huawei Cloud",
-      "link": "https://x.com/HuaweiCloud1/status/2064637581652852831",
-      "source": "article"
-    },
-    {
-      "title": "IT之家（RSS）",
-      "link": "https://www.ithome.com/0/962/515.htm",
-      "source": "article"
-    },
-    {
-      "title": "HuggingFace Daily Papers（社区热门论文）",
-      "link": "https://arxiv.org/abs/2606.10651",
-      "source": "article"
-    },
-    {
-      "title": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "link": "https://perspectives.mvdirona.com/2026/06/flat-datacenter-networks-at-scale",
-      "source": "article"
-    },
-    {
-      "title": "公众号：千问APP（阿里）",
-      "link": "https://mp.weixin.qq.com/s/4fovMM29x8tJ2E25kidl1A",
-      "source": "article"
-    },
-    {
-      "title": "公众号：火山引擎",
-      "link": "https://mp.weixin.qq.com/s/g3DxNO_3aYI4g26gQ2Yvig",
-      "source": "article"
-    },
-    {
-      "title": "Rohan Paul",
-      "link": "https://x.com/rohanpaul_ai/status/2064524448582267047",
-      "source": "article"
-    },
-    {
-      "title": "meng shao",
-      "link": "https://x.com/shao__meng/status/2064508455051043008",
-      "source": "article"
-    },
-    {
-      "title": "Simon Willison 博客",
-      "link": "https://simonwillison.net/2026/Jun/9/agentsview-custom-model-price",
-      "source": "article"
-    },
-    {
-      "title": "Hugging Face：Blog（RSS）",
-      "link": "https://huggingface.co/blog/github-ci-hf-jobs",
-      "source": "article"
-    },
-    {
-      "title": "Claude：Blog（网页）",
-      "link": "https://claude.com/blog/whats-new-in-claude-managed-agents",
-      "source": "article"
-    },
-    {
-      "title": "OpenRouter：Announcements（RSS）",
-      "link": "https://openrouter.ai/blog/advisor-server-tool",
-      "source": "article"
-    },
-    {
-      "title": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-      "link": "https://openai.com/index/nextdoor",
-      "source": "article"
-    },
-    {
-      "title": "AI Notkilleveryoneism Memes ⏸️",
-      "link": "https://x.com/AISafetyMemes/status/2064435128479400270",
-      "source": "article"
-    },
-    {
-      "title": "NotebookLM",
-      "link": "https://x.com/NotebookLM/status/2064410506287538387",
-      "source": "article"
-    },
-    {
-      "title": "Ethan Mollick：One Useful Thing（RSS）",
-      "link": "https://www.oneusefulthing.org/p/what-it-feels-like-to-work-with-mythos",
-      "source": "article"
-    },
-    {
-      "title": "eric zakariasson",
-      "link": "https://x.com/ericzakariasson/status/2064404502053294565",
-      "source": "article"
-    },
-    {
-      "title": "OpenAI Developers",
-      "link": "https://x.com/OpenAIDevs/status/2064395155688616153",
-      "source": "article"
-    },
-    {
-      "title": "Fei-Fei Li",
-      "link": "https://x.com/drfeifei/status/2064387365930676695",
-      "source": "article"
-    },
-    {
-      "title": "xAI：News（网页）",
-      "link": "https://x.ai/news/grok-gopuff",
-      "source": "article"
-    },
-    {
-      "title": "Anthropic：Newsroom（网页）",
+      "title": "Claude Fable 5 和 Claude Mythos 5",
       "link": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
-      "source": "article"
+      "source": "AI热点聚合",
+      "tag": "ai"
     },
     {
-      "title": "OpenRouter",
-      "link": "https://x.com/OpenRouter/status/2064384545256833209",
-      "source": "article"
+      "title": "Gemini 3.5 Live Translate 发布",
+      "link": "https://x.com/GoogleDeepMind/status/2064366504745828689",
+      "source": "AI热点聚合",
+      "tag": "tech"
     },
     {
-      "title": "GitHub Blog",
+      "title": "OpenAI 向 SEC 机密提交 S-1 草案，上市时间未定",
+      "link": "https://openai.com/index/openai-submits-confidential-s-1",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "Apple发布新一代Apple Intelligence和Siri AI",
+      "link": "https://www.apple.com/newsroom/2026/06/apple-unveils-next-generation-of-apple-intelligence-siri-ai-and-more",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "走进 Anthropic：这家估值 9650 亿美元的 AI 巨头",
+      "link": "https://www.bloomberg.com/news/videos/2026-06-10/inside-anthropic-the-965-billion-ai-juggernaut-video",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "百度百舸联合复旦提出LU-KV框架，被ICML 2026录用",
+      "link": "https://mp.weixin.qq.com/s/oKhawmph49YYPR63T-ekaw",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "华为云发布全球首个端到端具身AI平台CloudRobo",
+      "link": "https://x.com/HuaweiCloud1/status/2064637581652852831",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "谷歌 DeepMind 经济学家伊马斯：尚未发现 AI 造成岗位流失的证据，跟风裁员恐适得其反",
+      "link": "https://www.ithome.com/0/962/515.htm",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "快手开源 Kwai Keye-VL-2.0-30B-A3B：面向长视频理解与智能体智能的 MoE 多模态模型",
+      "link": "https://arxiv.org/abs/2606.10651",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "摩尔线程开源 MusaCoder 代码大模型，9B/27B 参数基于国产 GPU 全链路训练",
+      "link": "https://www.ithome.com/0/962/509.htm",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "工信部印发《&quot;人工智能+信息通信&quot;创新发展实施意见》",
+      "link": "https://www.ithome.com/0/962/456.htm",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "用好 Claude Design 的一些经验",
+      "link": "https://x.com/dotey/status/2064601571397185639",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "亚马逊的大规模扁平化数据中心网络",
+      "link": "https://perspectives.mvdirona.com/2026/06/flat-datacenter-networks-at-scale",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "谷歌财务担保支撑 Anthropic 350 亿美元芯片租赁交易",
+      "link": "https://www.bloomberg.com/news/videos/2026-06-10/google-s-backstops-underpin-35-bln-anthropic-chip-deal-video",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "2026年高考，跟着千问，选好志愿！",
+      "link": "https://mp.weixin.qq.com/s/4fovMM29x8tJ2E25kidl1A",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "混合LLM中的注意力失忆：CoT微调破坏长距离召回及修复方法",
+      "link": "https://arxiv.org/abs/2606.11052",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "Flow-DPPO： 面向流匹配模型的散度近端策略优化",
+      "link": "https://arxiv.org/abs/2606.11025",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "火山方舟版权商业化平台上线，周星驰比高集团三大电影IP首批入驻",
+      "link": "https://mp.weixin.qq.com/s/g3DxNO_3aYI4g26gQ2Yvig",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "欧盟发布临时措施，要求 Meta 向第三方 AI 助手免费开放 WhatsApp",
+      "link": "https://www.ithome.com/0/962/206.htm",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "Text-To-Lottie：Agent Skill + 本地预览 Harness，让 Agent 生成 Lottie 动画并实时验收",
+      "link": "https://x.com/shao__meng/status/2064508455051043008",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "在 AgentsView 中为 Claude Fable 5 设置自定义价格",
+      "link": "https://simonwillison.net/2026/Jun/9/agentsview-custom-model-price",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "IBM CEO：AI不一定导致员工减少",
+      "link": "https://www.bloomberg.com/news/videos/2026-06-09/ibm-ceo-ai-won-t-necessarily-lead-to-smaller-headcount-video",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "精确性不等于忠实度：完整Oracle下的覆盖感知接地生成评估",
+      "link": "https://arxiv.org/abs/2606.09376",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "将 GitHub CI 迁移到 Hugging Face Jobs",
+      "link": "https://huggingface.co/blog/github-ci-hf-jobs",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "Super Micro 计划通过股权融资 70 亿美元用于 AI 服务器组件采购",
+      "link": "https://www.bloomberg.com/news/articles/2026-06-09/super-micro-plans-to-raise-7-billion-in-equity-for-ai-equipment",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "Claude Managed Agents 新增定时运行和环境变量存储功能",
+      "link": "https://claude.com/blog/whats-new-in-claude-managed-agents",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "Cohere发布North Mini Code：面向开发者的开源编码模型",
+      "link": "https://huggingface.co/blog/CohereLabs/introducing-north-mini-code",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "OpenRouter 推出 Advisor 工具：让低成本模型可随时调用强模型增强生成",
+      "link": "https://openrouter.ai/blog/advisor-server-tool",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "Nextdoor 工程师借助 Codex 与 GPT-5.5 无限制构建",
+      "link": "https://openai.com/index/nextdoor",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "Hugging Face 博客发布语音智能体代码切换基准测试",
+      "link": "https://huggingface.co/blog/ServiceNow-AI/code-switching",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "Claude Code 团队 Thariq 分享提升 Claude Code 效率的十条建议",
+      "link": "https://x.com/rohanpaul_ai/status/2064425086409679358",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "Claude Fable 发布：Anthropic 带来的另一种推理体验",
+      "link": "https://www.oneusefulthing.org/p/what-it-feels-like-to-work-with-mythos",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "Apollo 与 Blackstone 联手 350 亿美元 AI 融资交易",
+      "link": "https://www.bloomberg.com/news/videos/2026-06-09/apollo-blackstone-fund-ai-boom-video",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "Gopuff与SpaceXAI推出Go AI购物助手",
+      "link": "https://x.ai/news/grok-gopuff",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "GitHub Copilot CLI 推出自定义 AI 智能体，将一次性终端提示转化为可重复工作流",
       "link": "https://github.blog/ai-and-ml/github-copilot/from-one-off-prompts-to-workflows-how-to-use-custom-agents-in-github-copilot-cli",
-      "source": "article"
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "[arXiv CR] Safecloud: A Distributed, Encrypted Storage Cloud for Streaming",
+      "link": "http://rss.arxiv.org/rss/cs.CR",
+      "source": "arXiv cs.CR",
+      "summary": "cs.CR updates on the arXiv.org e-print archive.",
+      "tag": "security"
+    },
+    {
+      "title": "[arXiv CR] IDP-Bench: Benchmarking ability of LLMs to protect personal information in interdependent privacy contexts",
+      "link": "https://arxiv.org/abs/2606.09870",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2606.09870v1 Announce Type: new \nAbstract: We present Safecloud, a distributed, encrypted, self-pricing storage and streaming network whose storage and routing nodes never see plaintext and neve",
+      "tag": "security"
+    },
+    {
+      "title": "[arXiv CR] Bypassing Copyright Protection in Diffusion-based Customization via Two-Stage Latent Feature Optimization",
+      "link": "https://arxiv.org/abs/2606.09908",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2606.09908v1 Announce Type: new \nAbstract: Large language models (LLMs) are becoming widely deployed as personal AI assistants with access to sensitive user data, making privacy a major challeng",
+      "tag": "security"
+    },
+    {
+      "title": "[arXiv CR] GitInject: Real-World Prompt Injection Attacks in AI-Powered CI/CD Pipelines",
+      "link": "https://arxiv.org/abs/2606.09909",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2606.09909v1 Announce Type: new \nAbstract: With the growing concerns over copyright infringement in diffusion-based customization, adversarial attacks have emerged as a prominent defense strateg",
+      "tag": "security"
+    },
+    {
+      "title": "[arXiv CR] The Chronicles of Radio Frequency Fingerprinting",
+      "link": "https://arxiv.org/abs/2606.09935",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2606.09935v1 Announce Type: new \nAbstract: AI-powered agents are increasingly embedded in continuous integration and continuous delivery/deployment (CI/CD) pipelines to autonomously review pull ",
+      "tag": "security"
+    },
+    {
+      "title": "[arXiv CR] The Human Vulnerabilities &amp; Exploits (HVE) Framework",
+      "link": "https://arxiv.org/abs/2606.10031",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2606.10031v1 Announce Type: new \nAbstract: Radio Frequency Fingerprinting (RFF) has evolved from an early idea for radar emitter identification into a broad research field for wireless device id",
+      "tag": "security"
+    },
+    {
+      "title": "[HN] 2. AWS Bedrock 将要求与 Anthropic 共享数据，以支持 Mythos 及未来模型",
+      "link": "https://news.ycombinator.com/item?id=48473166",
+      "source": "Hacker News (buzzing.cc)",
+      "tag": "tech"
+    },
+    {
+      "title": "[HN] 7. 惊喜，支付1000美元",
+      "link": "https://forestwalk.ai/blog/surprise-blacksmith-costs/",
+      "source": "Hacker News (buzzing.cc)",
+      "tag": "tech"
+    },
+    {
+      "title": "[HN] forestwalk.ai)06:01",
+      "link": "https://forestwalk.ai/blog/surprise-blacksmith-costs/",
+      "source": "Hacker News (buzzing.cc)",
+      "tag": "tech"
+    },
+    {
+      "title": "[HN] 9. 该公司将在自动车牌识别系统中增加手机、AirPods和智能手表追踪功能",
+      "link": "https://www.404media.co/this-company-will-add-phone-airpod-and-smartwatch-trackers-to-license-plate-readers/",
+      "source": "Hacker News (buzzing.cc)",
+      "tag": "tech"
+    },
+    {
+      "title": "[HN] www.404media.co)05:01",
+      "link": "https://www.404media.co/this-company-will-add-phone-airpod-and-smartwatch-trackers-to-license-plate-readers/",
+      "source": "Hacker News (buzzing.cc)",
+      "tag": "tech"
+    },
+    {
+      "title": "[HN] 10. 软件黑客马拉松，安息吧。硬件黑客马拉松，万岁！",
+      "link": "https://blog.oscars.dev/posts/rip-software-hackathons-long-live-the-hardware-hackathon/",
+      "source": "Hacker News (buzzing.cc)",
+      "tag": "tech"
+    },
+    {
+      "title": "[HN] blog.oscars.dev)06:35",
+      "link": "https://blog.oscars.dev/posts/rip-software-hackathons-long-live-the-hardware-hackathon/",
+      "source": "Hacker News (buzzing.cc)",
+      "tag": "tech"
+    },
+    {
+      "title": "[HN] 13. 德国法院裁定谷歌应对AI概览中的错误答案承担责任",
+      "link": "https://the-decoder.com/landmark-german-ruling-declares-googles-ai-overviews-are-googles-own-words-and-makes-it-liable-for-false-answers/",
+      "source": "Hacker News (buzzing.cc)",
+      "tag": "tech"
+    },
+    {
+      "title": "[HN] the-decoder.com)09:44",
+      "link": "https://the-decoder.com/landmark-german-ruling-declares-googles-ai-overviews-are-googles-own-words-and-makes-it-liable-for-false-answers/",
+      "source": "Hacker News (buzzing.cc)",
+      "tag": "tech"
+    },
+    {
+      "title": "[HN] 15. macOS 容器机",
+      "link": "https://github.com/apple/container/blob/main/docs/container-machine.md",
+      "source": "Hacker News (buzzing.cc)",
+      "tag": "tech"
+    },
+    {
+      "title": "[HN] github.com)08:29",
+      "link": "https://github.com/apple/container/blob/main/docs/container-machine.md",
+      "source": "Hacker News (buzzing.cc)",
+      "tag": "tech"
+    },
+    {
+      "title": "[HN] 16. 大型语言模型能否超越经典的超参数优化算法？",
+      "link": "https://arxiv.org/abs/2603.24647",
+      "source": "Hacker News (buzzing.cc)",
+      "tag": "tech"
     }
   ],
-  "crawled_at": "2026-06-10T21:34:49.897970"
+  "crawled_at": "2026-06-10T22:02:29.539696"
 }
