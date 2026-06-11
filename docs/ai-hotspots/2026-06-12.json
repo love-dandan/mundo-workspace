@@ -1,0 +1,321 @@
+{
+  "date": "2026-06-12",
+  "sources": [
+    "aihot.virxact.com",
+    "arXiv cs.CR",
+    "GitHub Trending",
+    "Hacker News"
+  ],
+  "count": 50,
+  "ai_count": 20,
+  "security_count": 8,
+  "hotspots": [
+    {
+      "title": "DiffusionGemma：文本生成速度提升4倍的开源扩散模型",
+      "link": "https://deepmind.google/blog/diffusiongemma-4x-faster-text-generation",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "Claude Fable 5 和 Claude Mythos 5",
+      "link": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "OpenAI 正酝酿“大幅”降价，Gary Marcus 视其为示弱信号",
+      "link": "https://garymarcus.substack.com/p/breaking-openai-is-pondering-drastic",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "小米发布并开源终端AI编程助手MiMo Code V0.1.0，采用MIT协议",
+      "link": "https://mp.weixin.qq.com/s/WkMPz-eBK2Hz0ZTQEwtx6w",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "Anthropic CEO Dario Amodei 发文呼吁缩小AI政策差距",
+      "link": "https://x.com/AnthropicAI/status/2064783418844762489",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "研究模拟显示：LLM 在 95% 的模拟中会使用战术核武器",
+      "link": "https://www.kennethpayne.uk/p/shall-we-play-a-game",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "什么是 LLM 网关？应用与 AI 模型之间缺失的一层",
+      "link": "https://openrouter.ai/blog/insights/llm-gateway",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "全自主无人机首次击毙了人类士兵",
+      "link": "https://www.newscientist.com/article/2529849-fully-autonomous-drones-have-killed-human-soldiers-for-the-first-time",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "Anthropic与DXC达成全球联盟，将Claude引入关键行业系统",
+      "link": "https://www.anthropic.com/news/dxc-anthropic-alliance",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "BBVA 将 AI 置于银行业务核心，与 OpenAI 合作",
+      "link": "https://openai.com/index/bbva",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "Cursor 推出 Auto-review 机制：用分类器智能体动态管控智能体自主权限",
+      "link": "https://cursor.com/blog/auto-review",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "DeepSeek-R1 的开源实现",
+      "link": "https://github.com/huggingface/open-r1",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "OpenAI 将收购 Ona",
+      "link": "https://openai.com/index/openai-to-acquire-ona",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "xAI 推出 Grok Build Plugin Marketplace",
+      "link": "https://x.ai/news/grok-plugin-marketplace",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "Prometheus 融资120亿美元，估值410亿美元，定位&quot;人工通用工程师&quot;",
+      "link": "https://x.com/kimmonismus/status/2065097988859744503",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "Codex Goal指令生成Skill发布：一句话需求转目标",
+      "link": "https://x.com/vista8/status/2065090494972174821",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "Runway与Lionsgate扩大战略合作",
+      "link": "https://runwayml.com/news/runway-and-lionsgate-expand-partnership",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "OpenAI 正酝酿&quot;大幅&quot;降价，Gary Marcus 视其为示弱信号",
+      "link": "https://garymarcus.substack.com/p/breaking-openai-is-pondering-drastic",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "Anthropic 启动 Claude Corps 全国奖学金项目",
+      "link": "https://www.anthropic.com/news/claude-corps",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "Google DeepMind 宣布投入 1000 万美元资助多智能体AI安全研究",
+      "link": "https://deepmind.google/blog/investing-in-multi-agent-ai-safety-research",
+      "source": "AI热点聚合",
+      "tag": "security"
+    },
+    {
+      "title": "阿里云发布 Meoo CLI：本地 AI 编程项目可一键部署上线",
+      "link": "https://www.ithome.com/0/963/009.htm",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "千问推出首个足球预测AI助手，竞猜赢奖并捐建球场",
+      "link": "https://mp.weixin.qq.com/s/G36ugI8tuSLUkDzL_sJNkQ",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "腾讯混元 AI Infra 新开源：HPC-Ops 推理核心算子全面升级",
+      "link": "https://mp.weixin.qq.com/s/y0vd1cpvWXLSssL1kXxguw",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "Deezer 推出面向其他流媒体服务的 AI 音乐检测器",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/948153/deezer-ai-music-detector-spotify-apple",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "OpenAI 支持欧洲构建可信 AI 生态系统",
+      "link": "https://openai.com/index/supporting-eu-trustworthy-ai-ecosystem",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "AI浪潮引发中国担忧：官媒呼吁保护劳动者权益",
+      "link": "https://www.bloomberg.com/news/articles/2026-06-11/ai-wave-sparks-alarm-in-china-with-call-to-protect-worker-rights",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "baoyu-design skill 更新：支持导入 Figma 本地文件重建设计系统",
+      "link": "https://x.com/dotey/status/2064959133535658144",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "Anthropic CEO 阿莫迪：AI 可能会造成大规模、长期性的岗位流失",
+      "link": "https://www.ithome.com/0/962/854.htm",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "Midjourney V8.1 已成为默认模型",
+      "link": "https://updates.midjourney.com/v8-1-is-now-the-default-model",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "Bebop：通过带拒绝采样的多token预测加速RL训练",
+      "link": "https://arxiv.org/abs/2606.12370",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "从0到1速通WorkBuddy：国内通用Agent产品教程",
+      "link": "https://mp.weixin.qq.com/s/nFSSzluc57xPv50Zbh4owg",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "通过 Oracle 云承诺访问 OpenAI 模型和 Codex",
+      "link": "https://openai.com/index/openai-on-oracle-cloud",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "[arXiv CR] When Poison Fails After Retrieval: Revisiting Corpus Poisoning under Chunking and Reranking Pipelines",
+      "link": "http://rss.arxiv.org/rss/cs.CR",
+      "source": "arXiv cs.CR",
+      "summary": "cs.CR updates on the arXiv.org e-print archive.",
+      "tag": "security"
+    },
+    {
+      "title": "[arXiv CR] MPC-Patch-Bench: Security-Aware LLM Code Patch for Multi-Party Computation",
+      "link": "https://arxiv.org/abs/2606.11265",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2606.11265v1 Announce Type: new \nAbstract: Retrieval-Augmented Generation (RAG) systems are vulnerable to corpus poisoning attacks that manipulate downstream model outputs through malicious know",
+      "tag": "security"
+    },
+    {
+      "title": "[arXiv CR] JailbreakOPT: Tool-Assisted Iterative Jailbreak Prompt Optimization",
+      "link": "https://arxiv.org/abs/2606.11416",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2606.11416v1 Announce Type: new \nAbstract: Repository-level benchmarks for evaluating Large Language Model (LLM) code repair on Secure Multi-Party Computation (MPC) software do not yet exist, an",
+      "tag": "security"
+    },
+    {
+      "title": "[arXiv CR] Evaluating and Combating the Impact of Concept Drift on the Performance of Machine Learning-Based Phishing Detection Systems",
+      "link": "https://arxiv.org/abs/2606.11425",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2606.11425v1 Announce Type: new \nAbstract: Jailbreak attacks expose persistent safety weaknesses in large language models (LLMs), but existing stateless single-turn methods face a trade-off: han",
+      "tag": "security"
+    },
+    {
+      "title": "[arXiv CR] Hiding the Trees in the Forest: Building Network Covert Channels with Hash-Based Covert Carrier Filtering",
+      "link": "https://arxiv.org/abs/2606.11471",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2606.11471v1 Announce Type: new \nAbstract: The expansion of the digital domain has resulted in a substantial increase in digital communication, with email emerging as one of the most prominent c",
+      "tag": "security"
+    },
+    {
+      "title": "[arXiv CR] VIPIR: A Versatile GPU Framework for Integrating Private Information Retrieval Protocols",
+      "link": "https://arxiv.org/abs/2606.11532",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2606.11532v1 Announce Type: new \nAbstract: As an effective anti-censorship mechanism, network covert channels can provide data privacy protection and ensure communication security. However, the ",
+      "tag": "security"
+    },
+    {
+      "title": "[HN] 3. 我们来玩个游戏吧？——在95%的模拟中，大型语言模型都会使用战术核武器",
+      "link": "https://www.kennethpayne.uk/p/shall-we-play-a-game",
+      "source": "Hacker News (buzzing.cc)",
+      "tag": "tech"
+    },
+    {
+      "title": "[HN] 5. OpenAI正考虑大幅降价，以在与Anthropic的用户争夺战中占据优势",
+      "link": "https://www.cnbc.com/2026/06/11/openai-mulls-slashing-prices-ahead-of-competition-from-anthropic-wsj.html",
+      "source": "Hacker News (buzzing.cc)",
+      "tag": "ai"
+    },
+    {
+      "title": "[HN] www.cnbc.com)06-11",
+      "link": "https://www.cnbc.com/2026/06/11/openai-mulls-slashing-prices-ahead-of-competition-from-anthropic-wsj.html",
+      "source": "Hacker News (buzzing.cc)",
+      "tag": "tech"
+    },
+    {
+      "title": "[HN] 6. 克劳德·法布尔 5：编码任务的中等水平表现",
+      "link": "https://www.endorlabs.com/learn/claude-fable-5-mythos-grade-hype",
+      "source": "Hacker News (buzzing.cc)",
+      "tag": "tech"
+    },
+    {
+      "title": "[HN] www.endorlabs.com)00:03",
+      "link": "https://www.endorlabs.com/learn/claude-fable-5-mythos-grade-hype",
+      "source": "Hacker News (buzzing.cc)",
+      "tag": "tech"
+    },
+    {
+      "title": "[HN] 10. AMD拒绝修复的RCE漏洞",
+      "link": "https://mrbruh.com/amd2/",
+      "source": "Hacker News (buzzing.cc)",
+      "tag": "tech"
+    },
+    {
+      "title": "[HN] 16. Anthropic 就“看不见的”Claude Fable 安全防护措施致歉",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/948280/anthropic-claude-fable-invisible-distillation-guardrail",
+      "source": "Hacker News (buzzing.cc)",
+      "tag": "security"
+    },
+    {
+      "title": "[HN] www.theverge.com)06-11",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/948280/anthropic-claude-fable-invisible-distillation-guardrail",
+      "source": "Hacker News (buzzing.cc)",
+      "tag": "tech"
+    },
+    {
+      "title": "[HN] 17. DeepSeek-R1 的开源实现",
+      "link": "https://github.com/huggingface/open-r1",
+      "source": "Hacker News (buzzing.cc)",
+      "tag": "ai"
+    },
+    {
+      "title": "[HN] 22. 员工每周花在“照看”AI上的时间超过6小时，这加剧了他们对工作的不满",
+      "link": "https://www.businessinsider.com/botsitting-ai-hidden-human-labor-at-work-2026-6",
+      "source": "Hacker News (buzzing.cc)",
+      "tag": "tech"
+    },
+    {
+      "title": "[HN] www.businessinsider.com",
+      "link": "https://www.businessinsider.com/botsitting-ai-hidden-human-labor-at-work-2026-6",
+      "source": "Hacker News (buzzing.cc)",
+      "tag": "tech"
+    },
+    {
+      "title": "[HN] 26. 为什么人工智能没有取代软件工程师，而且将来也不会",
+      "link": "https://www.normaltech.ai/p/why-ai-hasnt-replaced-software-engineers",
+      "source": "Hacker News (buzzing.cc)",
+      "tag": "tech"
+    }
+  ],
+  "crawled_at": "2026-06-12T07:33:09.065037"
+}
