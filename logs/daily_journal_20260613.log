@@ -1,0 +1,95 @@
+╔════════════════════════════════════════════════════════════╗
+║       蒙多每日AI+安全学习系统                              ║
+╚════════════════════════════════════════════════════════════╝
+
+开始时间: 2026-06-13 06:00:02
+仓库路径: /c/Users/25176/Desktop/love-dandan/mundo-cloud
+
+━━━ 第一步：抓取期刊文章 ━━━
+[2026-06-13 06:00:31] INFO: Fetched (200) <GET https://rss.arxiv.org/rss/cs.AI> (referer: https://www.google.com/)
+[2026-06-13 06:00:34] INFO: Fetched (200) <GET https://rss.arxiv.org/rss/cs.CR> (referer: https://www.google.com/)
+[2026-06-13 06:01:04] WARNING: Proxy 'None' failed (attempt 1) | Retrying in 1 seconds...
+[2026-06-13 06:01:35] WARNING: Proxy 'None' failed (attempt 2) | Retrying in 1 seconds...
+[2026-06-13 06:02:06] ERROR: Failed after 3 attempts: Failed to perform, curl: (28) Connection timed out after 30006 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+[2026-06-13 06:04:00] WARNING: Proxy 'None' failed (attempt 1) | Retrying in 1 seconds...
+[2026-06-13 06:04:22] WARNING: Proxy 'None' failed (attempt 2) | Retrying in 1 seconds...
+[2026-06-13 06:04:45] ERROR: Failed after 3 attempts: Failed to perform, curl: (28) Failed to connect to huggingface.co port 443 after 21034 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+[2026-06-13 06:05:22] INFO: Fetched (200) <GET https://openai.com/news/rss.xml> (referer: https://www.google.com/)
+[2026-06-13 06:05:43] WARNING: Proxy 'None' failed (attempt 1) | Retrying in 1 seconds...
+[2026-06-13 06:06:05] WARNING: Proxy 'None' failed (attempt 2) | Retrying in 1 seconds...
+[2026-06-13 06:06:27] ERROR: Failed after 3 attempts: Failed to perform, curl: (28) Failed to connect to feeds.feedburner.com port 443 after 21062 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+[2026-06-13 06:06:50] INFO: Fetched (200) <GET https://krebsonsecurity.com/feed/> (referer: https://www.google.com/)
+[2026-06-13 06:07:11] WARNING: Proxy 'None' failed (attempt 1) | Retrying in 1 seconds...
+[2026-06-13 06:07:33] WARNING: Proxy 'None' failed (attempt 2) | Retrying in 1 seconds...
+[2026-06-13 06:07:55] ERROR: Failed after 3 attempts: Failed to perform, curl: (28) Failed to connect to googleprojectzero.blogspot.com port 443 after 21046 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+[2026-06-13 06:00] 蒙多 AI+安全 情报扫描启动
+
+  🤖 arXiv cs.AI... (3 新)
+  🔒 arXiv cs.CR (密码学与安全)... (3 新)
+  🤖 Anthropic Research...   [warn] Scrapling: Failed to perform, curl: (28) Connection timed out after 30006 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+  [warn] requests: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Read timed out. (read timeout=30)
+(无响应)
+  🤖 Hugging Face Blog...   [warn] Scrapling: Failed to perform, curl: (28) Failed to connect to huggingface.co port 443 after 21034 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+  [warn] requests: HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /blog/feed.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x1d5cd9e6890>, 'Connection to huggingface.co timed out. (connect timeout=30)'))
+(无响应)
+  🤖 OpenAI Blog... (3 新)
+  🔒 The Hacker News...   [warn] Scrapling: Failed to perform, curl: (28) Failed to connect to feeds.feedburner.com port 443 after 21062 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+  [warn] requests: HTTPSConnectionPool(host='feeds.feedburner.com', port=443): Max retries exceeded with url: /TheHackersNews (Caused by ConnectTimeoutError(<HTTPSConnection(host='feeds.feedburner.com', port=443) at 0x1d5cf5891d0>, 'Connection to feeds.feedburner.com timed out. (connect timeout=30)'))
+(无响应)
+  🔒 Krebs on Security... (0 新)
+  🔒 Google Project Zero...   [warn] Scrapling: Failed to perform, curl: (28) Failed to connect to googleprojectzero.blogspot.com port 443 after 21046 ms: Could not connect to server. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+  [warn] requests: HTTPSConnectionPool(host='googleprojectzero.blogspot.com', port=443): Max retries exceeded with url: /feeds/posts/default?alt=rss (Caused by ConnectTimeoutError(<HTTPSConnection(host='googleprojectzero.blogspot.com', port=443) at 0x1d5cf54ab90>, 'Connection to googleprojectzero.blogspot.com timed out. (connect timeout=30)'))
+(无响应)
+
+==================================================
+扫描完成: 9 条新情报 (🤖 AI: 6 | 🔒 安全: 3)
+缓存已保存: C:\Users\25176\Desktop\love-dandan\mundo-cloud\journal_cache\articles_20260613.json
+{"total": 9}
+
+━━━ 第二步：生成skill ━━━
+=== �ɶ�AI+��ȫѧϰϵͳ ===
+
+�����鱨...
+  ����: learn-arxiv-cs-ai-toolsense-a-diagnostic-20260613
+  ����: learn-arxiv-cs-ai-arbor-tree-search-20260613
+  ����: learn-arxiv-cs-ai-strategic-decision-support-20260613
+  ����: learn-arxiv-cs-cr-influence-factors-on-20260613
+  ����: learn-arxiv-cs-cr-from-parameters-to-20260613
+  ����: learn-arxiv-cs-cr-beyond-attack-success-20260613
+  ����: learn-openai-blog-new-openai-academy-20260613
+  ����: learn-openai-blog-how-preply-combines-20260613
+  ����: learn-openai-blog-dreaming-better-memory-20260613
+
+������ 9 ���¼���
+
+����ÿ��ժҪ...
+����ÿ��ժҪ: learn-daily-digest-20260613
+
+��ɣ����� 9 ��ѧϰ���� + 1 ��ÿ��ժҪ
+
+━━━ 第三步：同步到本地skills ━━━
+已同步到 /c/Users/25176/.hermes/skills/learning
+
+━━━ 第四步：提交到云仓库 ━━━
+[master bf0713f] feat: 蒙多AI+安全学习 2026-06-13 — 新增 9 条情报
+ 12 files changed, 627 insertions(+)
+ create mode 100644 journal_cache/articles_20260613.json
+ create mode 100644 skills/learning/learn-arxiv-cs-ai-arbor-tree-search-20260613.md
+ create mode 100644 skills/learning/learn-arxiv-cs-ai-strategic-decision-support-20260613.md
+ create mode 100644 skills/learning/learn-arxiv-cs-ai-toolsense-a-diagnostic-20260613.md
+ create mode 100644 skills/learning/learn-arxiv-cs-cr-beyond-attack-success-20260613.md
+ create mode 100644 skills/learning/learn-arxiv-cs-cr-from-parameters-to-20260613.md
+ create mode 100644 skills/learning/learn-arxiv-cs-cr-influence-factors-on-20260613.md
+ create mode 100644 skills/learning/learn-daily-digest-20260613.md
+ create mode 100644 skills/learning/learn-openai-blog-dreaming-better-memory-20260613.md
+ create mode 100644 skills/learning/learn-openai-blog-how-preply-combines-20260613.md
+ create mode 100644 skills/learning/learn-openai-blog-new-openai-academy-20260613.md
+已提交
+To https://github.com/love-dandan/mundo-cloud.git
+   8637e3c..bf0713f  master -> master
+已推送到GitHub
+
+╔════════════════════════════════════════════════════════════╗
+║          完成！                                           ║
+╚════════════════════════════════════════════════════════════╝
+结束时间: 2026-06-13 06:08:23
