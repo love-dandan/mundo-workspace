@@ -1,0 +1,279 @@
+{
+  "date": "2026-06-14",
+  "sources": [
+    "aihot.virxact.com",
+    "arXiv cs.CR",
+    "GitHub Trending",
+    "Hacker News"
+  ],
+  "count": 44,
+  "ai_count": 12,
+  "security_count": 2,
+  "hotspots": [
+    {
+      "title": "关于美国政府指令暂停访问Fable 5和Mythos 5的声明",
+      "link": "https://www.anthropic.com/news/fable-mythos-access",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "智谱 GLM-5.2 全量开放，支持 1M 上下文且下周开源",
+      "link": "https://mp.weixin.qq.com/s/LDrbtLM0wiCTJorvd5GY9w",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "亚马逊首席执行官与美国官员会谈引发对 Anthropic 模型的整治",
+      "link": "https://www.wsj.com/tech/ai/amazon-ceos-talks-with-u-s-officials-triggered-crackdown-on-anthropic-models-dcc90578",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "/architect：减少80%的Fable token，Fable负责协调/审核，Codex负责构建",
+      "link": "https://github.com/DanMcInerney/architect-loop",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "Anthropic 秘密申请上市，估值 9650 亿美元",
+      "link": "https://www.bloomberg.com/news/articles/2026-06-13/global-capitalism-bets-it-all-on-ai-future-that-alarms-voters",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "5个AI文明社会实验：Claude建乌托邦，Grok四天团灭",
+      "link": "https://mp.weixin.qq.com/s/zUS4qAn9n8ke5BTVF90XwA",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "MNN 适配 SME2 使 Qwen3-VL-4B 在端侧实时推理",
+      "link": "https://mp.weixin.qq.com/s/QNl4pn5JzxpEeFAEvq88ZA",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "谷歌Android安全负责人因反对军事AI合作辞职",
+      "link": "https://www.ithome.com/0/963/888.htm",
+      "source": "AI热点聚合",
+      "tag": "security"
+    },
+    {
+      "title": "扎克伯格承认 Meta AI 转型&quot;脱轨&quot;：裁员 10%、转岗 7000 人后组织调整过快",
+      "link": "https://www.ithome.com/0/963/858.htm",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "SemiAnalysis 洞察 Token 经济：200 美元 AI 订阅榨出 70 倍用量",
+      "link": "https://www.ithome.com/0/963/834.htm",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "inclusionAI 发布 VISTA-4B GUI 定位视觉语言模型",
+      "link": "https://huggingface.co/inclusionAI/VISTA-4B",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "Anthropic的安全警告可能适得其反--政府已撤回其最强大AI",
+      "link": "https://techcrunch.com/2026/06/12/anthropics-safety-warnings-may-have-just-backfired-the-government-has-pulled-the-plug-on-its-most-powerful-ai",
+      "source": "AI热点聚合",
+      "tag": "security"
+    },
+    {
+      "title": "Hermes Agent 在 OpenRouter 上的使用指南：设置、模型与路由",
+      "link": "https://openrouter.ai/blog/tutorials/hermes-agent",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "OpenAI 遭多州总检察长联合调查",
+      "link": "https://www.bloomberg.com/news/articles/2026-06-13/openai-probed-by-coalition-of-state-attorneys-general",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "Oran Ge 开源《人味儿写作心法.skill》解决AI写作缺人味",
+      "link": "https://x.com/oran_ge/status/2065566882774868125",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "如何在OpenRouter上获得最低成本的LLM推理",
+      "link": "https://openrouter.ai/blog/tutorials/how-to-get-the-lowest-cost-llm-inference-on-openrouter",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "OpenAI 推出面向新时代工作的新 Academy 课程",
+      "link": "https://openai.com/index/academy-courses-applying-ai-at-work",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "Anthropic首次公众调查：近半美国人盼AI治愈疾病，超六成担忧失业",
+      "link": "https://www.anthropic.com/news/anthropic-public-record",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "olmo-eval：面向模型开发循环的评估工作台",
+      "link": "https://huggingface.co/blog/allenai/olmo-eval",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "字节豆包上线&quot;任务模式&quot;：支持定时执行与文件生成，&quot;思考模式&quot;升级为&quot;专家模式&quot;",
+      "link": "https://www.ithome.com/0/963/725.htm",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "Kimi 发布并开源最新代码模型 Kimi-K2.7-Code",
+      "link": "https://x.com/Kimi_Moonshot/status/2065377579130142937",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "HYDRA-X： 原生统一多模态模型与整体视觉分词器",
+      "link": "https://arxiv.org/abs/2606.13289",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "MiniMax Sparse Attention（MSA）块状稀疏注意力",
+      "link": "https://arxiv.org/abs/2606.13392",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "EurekAgent：环境工程化实现自主科学发现",
+      "link": "https://arxiv.org/abs/2606.13662",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "WEAVER：一种更优、更快、更长的机器人操作世界模型",
+      "link": "https://arxiv.org/abs/2606.13672",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "qiaomu-ai-prd：面向AI的PRD生成Prompt",
+      "link": "https://x.com/vista8/status/2065264509170876417",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "苹果 iOS 27 健康 App 大改：卡片布局、营养识别、围绝经期追踪",
+      "link": "https://www.ithome.com/0/963/302.htm",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "Spec 驱动开发（SDD）的三个 Skills：覆盖 Spec→Implement→Verify 闭环",
+      "link": "https://x.com/shao__meng/status/2065234132431675439",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "研究模拟显示：LLM 在 95% 的模拟中会使用战术核武器",
+      "link": "https://www.kennethpayne.uk/p/shall-we-play-a-game",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "什么是 LLM 网关？应用与 AI 模型之间缺失的一层",
+      "link": "https://openrouter.ai/blog/insights/llm-gateway",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "全自主无人机首次击毙了人类士兵",
+      "link": "https://www.newscientist.com/article/2529849-fully-autonomous-drones-have-killed-human-soldiers-for-the-first-time",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "Anthropic与DXC达成全球联盟，将Claude引入关键行业系统",
+      "link": "https://www.anthropic.com/news/dxc-anthropic-alliance",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "[HN] 1. 一名警员因在多起案件中利用人工智能“伪造证据”而受到调查",
+      "link": "https://news.sky.com/story/derbyshire-police-officer-investigated-for-using-ai-to-create-evidence-in-multiple-cases-13553661",
+      "source": "Hacker News (buzzing.cc)",
+      "tag": "tech"
+    },
+    {
+      "title": "[HN] news.sky.com)03:54",
+      "link": "https://news.sky.com/story/derbyshire-police-officer-investigated-for-using-ai-to-create-evidence-in-multiple-cases-13553661",
+      "source": "Hacker News (buzzing.cc)",
+      "tag": "tech"
+    },
+    {
+      "title": "[HN] 4. 在家学习AI编程，不花大钱",
+      "link": "https://stephen.bochinski.dev/blog/2026/06/13/ai-coding-at-home-without-going-broke/",
+      "source": "Hacker News (buzzing.cc)",
+      "tag": "tech"
+    },
+    {
+      "title": "[HN] stephen.bochinski.dev",
+      "link": "https://stephen.bochinski.dev/blog/2026/06/13/ai-coding-at-home-without-going-broke/",
+      "source": "Hacker News (buzzing.cc)",
+      "tag": "tech"
+    },
+    {
+      "title": "[HN] 7. 亚马逊首席执行官与美国官员的会谈引发了对Anthropic模型的整治",
+      "link": "https://www.wsj.com/tech/ai/amazon-ceos-talks-with-u-s-officials-triggered-crackdown-on-anthropic-models-dcc90578",
+      "source": "Hacker News (buzzing.cc)",
+      "tag": "tech"
+    },
+    {
+      "title": "[HN] www.wsj.com)00:57",
+      "link": "https://www.wsj.com/tech/ai/amazon-ceos-talks-with-u-s-officials-triggered-crackdown-on-anthropic-models-dcc90578",
+      "source": "Hacker News (buzzing.cc)",
+      "tag": "tech"
+    },
+    {
+      "title": "[HN] 9. Show HN: Paca——一款适用于人机协作的轻量级 Jira 替代方案",
+      "link": "https://github.com/Paca-AI/paca",
+      "source": "Hacker News (buzzing.cc)",
+      "tag": "tech"
+    },
+    {
+      "title": "[HN] github.com)06-13",
+      "link": "https://github.com/Paca-AI/paca",
+      "source": "Hacker News (buzzing.cc)",
+      "tag": "tech"
+    },
+    {
+      "title": "[HN] 13. 美国禁止在人口普查数据中使用差分隐私技术",
+      "link": "https://desfontain.es/blog/banning-noise.html",
+      "source": "Hacker News (buzzing.cc)",
+      "tag": "tech"
+    },
+    {
+      "title": "[HN] desfontain.es)06-13",
+      "link": "https://desfontain.es/blog/banning-noise.html",
+      "source": "Hacker News (buzzing.cc)",
+      "tag": "tech"
+    },
+    {
+      "title": "[HN] 14. AI开源工具仓库在完成730万美元种子轮融资后，一夜之间被归档",
+      "link": "https://github.com/tensorzero/tensorzero",
+      "source": "Hacker News (buzzing.cc)",
+      "tag": "tech"
+    },
+    {
+      "title": "[HN] 18. 《牧羊犬：由最危险的AI模型打造的游戏》",
+      "link": "https://koenvangilst.nl/lab/claude-fable-shepherds-dog",
+      "source": "Hacker News (buzzing.cc)",
+      "tag": "tech"
+    }
+  ],
+  "crawled_at": "2026-06-14T07:01:58.361327"
+}

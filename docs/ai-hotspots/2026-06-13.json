@@ -1,0 +1,303 @@
+{
+  "date": "2026-06-13",
+  "sources": [
+    "aihot.virxact.com",
+    "arXiv cs.CR",
+    "GitHub Trending",
+    "Hacker News"
+  ],
+  "count": 47,
+  "ai_count": 14,
+  "security_count": 8,
+  "hotspots": [
+    {
+      "title": "OpenAI 正酝酿“大幅”降价，Gary Marcus 视其为示弱信号",
+      "link": "https://garymarcus.substack.com/p/breaking-openai-is-pondering-drastic",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "如何在OpenRouter上获得最低成本的LLM推理",
+      "link": "https://openrouter.ai/blog/tutorials/how-to-get-the-lowest-cost-llm-inference-on-openrouter",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "OpenAI 推出面向新时代工作的新 Academy 课程",
+      "link": "https://openai.com/index/academy-courses-applying-ai-at-work",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "Anthropic首次公众调查：近半美国人盼AI治愈疾病，超六成担忧失业",
+      "link": "https://www.anthropic.com/news/anthropic-public-record",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "olmo-eval：面向模型开发循环的评估工作台",
+      "link": "https://huggingface.co/blog/allenai/olmo-eval",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "字节豆包上线&quot;任务模式&quot;：支持定时执行与文件生成，&quot;思考模式&quot;升级为&quot;专家模式&quot;",
+      "link": "https://www.ithome.com/0/963/725.htm",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "Kimi 发布并开源最新代码模型 Kimi-K2.7-Code",
+      "link": "https://x.com/Kimi_Moonshot/status/2065377579130142937",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "HYDRA-X： 原生统一多模态模型与整体视觉分词器",
+      "link": "https://arxiv.org/abs/2606.13289",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "MiniMax Sparse Attention（MSA）块状稀疏注意力",
+      "link": "https://arxiv.org/abs/2606.13392",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "EurekAgent：环境工程化实现自主科学发现",
+      "link": "https://arxiv.org/abs/2606.13662",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "WEAVER：一种更优、更快、更长的机器人操作世界模型",
+      "link": "https://arxiv.org/abs/2606.13672",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "qiaomu-ai-prd：面向AI的PRD生成Prompt",
+      "link": "https://x.com/vista8/status/2065264509170876417",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "苹果 iOS 27 健康 App 大改：卡片布局、营养识别、围绝经期追踪",
+      "link": "https://www.ithome.com/0/963/302.htm",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "Spec 驱动开发（SDD）的三个 Skills：覆盖 Spec→Implement→Verify 闭环",
+      "link": "https://x.com/shao__meng/status/2065234132431675439",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "研究模拟显示：LLM 在 95% 的模拟中会使用战术核武器",
+      "link": "https://www.kennethpayne.uk/p/shall-we-play-a-game",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "什么是 LLM 网关？应用与 AI 模型之间缺失的一层",
+      "link": "https://openrouter.ai/blog/insights/llm-gateway",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "全自主无人机首次击毙了人类士兵",
+      "link": "https://www.newscientist.com/article/2529849-fully-autonomous-drones-have-killed-human-soldiers-for-the-first-time",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "Anthropic与DXC达成全球联盟，将Claude引入关键行业系统",
+      "link": "https://www.anthropic.com/news/dxc-anthropic-alliance",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "BBVA 将 AI 置于银行业务核心，与 OpenAI 合作",
+      "link": "https://openai.com/index/bbva",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "Cursor 推出 Auto-review 机制：用分类器智能体动态管控智能体自主权限",
+      "link": "https://cursor.com/blog/auto-review",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "DeepSeek-R1 的开源实现",
+      "link": "https://github.com/huggingface/open-r1",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "OpenAI 将收购 Ona",
+      "link": "https://openai.com/index/openai-to-acquire-ona",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "xAI 推出 Grok Build Plugin Marketplace",
+      "link": "https://x.ai/news/grok-plugin-marketplace",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "Prometheus 融资120亿美元，估值410亿美元，定位&quot;人工通用工程师&quot;",
+      "link": "https://x.com/kimmonismus/status/2065097988859744503",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "Codex Goal指令生成Skill发布：一句话需求转目标",
+      "link": "https://x.com/vista8/status/2065090494972174821",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "Runway与Lionsgate扩大战略合作",
+      "link": "https://runwayml.com/news/runway-and-lionsgate-expand-partnership",
+      "source": "AI热点聚合",
+      "tag": "tech"
+    },
+    {
+      "title": "OpenAI 正酝酿&quot;大幅&quot;降价，Gary Marcus 视其为示弱信号",
+      "link": "https://garymarcus.substack.com/p/breaking-openai-is-pondering-drastic",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "Anthropic 启动 Claude Corps 全国奖学金项目",
+      "link": "https://www.anthropic.com/news/claude-corps",
+      "source": "AI热点聚合",
+      "tag": "ai"
+    },
+    {
+      "title": "Google DeepMind 宣布投入 1000 万美元资助多智能体AI安全研究",
+      "link": "https://deepmind.google/blog/investing-in-multi-agent-ai-safety-research",
+      "source": "AI热点聚合",
+      "tag": "security"
+    },
+    {
+      "title": "[arXiv CR] Influence Factors on RAG Poisoning",
+      "link": "http://rss.arxiv.org/rss/cs.CR",
+      "source": "arXiv cs.CR",
+      "summary": "cs.CR updates on the arXiv.org e-print archive.",
+      "tag": "security"
+    },
+    {
+      "title": "[arXiv CR] From Parameters to Feature Space: Task Arithmetic for Backdoor Mitigation in Model Merging",
+      "link": "https://arxiv.org/abs/2606.12469",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2606.12469v1 Announce Type: new \nAbstract: Retrieval-Augmented Generation (RAG) systems enhance large language models by grounding responses in retrieved documents from external knowledge source",
+      "tag": "security"
+    },
+    {
+      "title": "[arXiv CR] Beyond Attack Success Rate: Examining Trigger Leakage in Vision-Language Agentic Systems",
+      "link": "https://arxiv.org/abs/2606.12498",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2606.12498v1 Announce Type: new \nAbstract: Model merging (MM) has gained significant attention as a cost-effective approach to integrate multiple task-specific models into a unified model. Howev",
+      "tag": "security"
+    },
+    {
+      "title": "[arXiv CR] Amnesia: A Stealthy Replay Attack on Continual Learning Dreams",
+      "link": "https://arxiv.org/abs/2606.12586",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2606.12586v1 Announce Type: new \nAbstract: Vision-Language Agentic Systems (VLAS) connect visual perception to planning, tool use, and physical actions. This means backdoor-type triggers can pro",
+      "tag": "security"
+    },
+    {
+      "title": "[arXiv CR] CAPED: Context-Aware Privacy Exposure Defense for Mobile GUI Agents",
+      "link": "https://arxiv.org/abs/2606.12655",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2606.12655v1 Announce Type: new \nAbstract: Continual learning (CL) models often use experience replay to reduce catastrophic forgetting, but their robustness to replay sampling interference rema",
+      "tag": "security"
+    },
+    {
+      "title": "[arXiv CR] SMSR: Certified Defence Against Runtime Memory Poisoning in Persistent LLM Agent Systems",
+      "link": "https://arxiv.org/abs/2606.12666",
+      "source": "arXiv cs.CR",
+      "summary": "arXiv:2606.12666v1 Announce Type: new \nAbstract: Screenshot-based mobile GUI agents can operate ordinary smartphone apps through the same visual interface as a human user, but this capability also tur",
+      "tag": "security"
+    },
+    {
+      "title": "[HN] 3. Tailwind 和 Slop 应用",
+      "link": "https://briandouglas.ie/llm-tailwind-template/",
+      "source": "Hacker News (buzzing.cc)",
+      "tag": "tech"
+    },
+    {
+      "title": "[HN] briandouglas.ie)06-12",
+      "link": "https://briandouglas.ie/llm-tailwind-template/",
+      "source": "Hacker News (buzzing.cc)",
+      "tag": "tech"
+    },
+    {
+      "title": "[HN] 5. 《海盗》，一款受《席德·梅尔的海盗》启发的海战游戏",
+      "link": "https://piwodlaiwo.github.io/pirates/",
+      "source": "Hacker News (buzzing.cc)",
+      "tag": "tech"
+    },
+    {
+      "title": "[HN] piwodlaiwo.github.io)01:07",
+      "link": "https://piwodlaiwo.github.io/pirates/",
+      "source": "Hacker News (buzzing.cc)",
+      "tag": "tech"
+    },
+    {
+      "title": "[HN] 6. 如何在 macOS 上设置本地编码代理",
+      "link": "https://ikyle.me/blog/2026/how-to-setup-a-local-coding-agent-on-macos",
+      "source": "Hacker News (buzzing.cc)",
+      "tag": "tech"
+    },
+    {
+      "title": "[HN] ikyle.me)01:34",
+      "link": "https://ikyle.me/blog/2026/how-to-setup-a-local-coding-agent-on-macos",
+      "source": "Hacker News (buzzing.cc)",
+      "tag": "tech"
+    },
+    {
+      "title": "[HN] 7. “你直接上传到ChatGPT不就行了？”",
+      "link": "https://correresmidestino.com/dont-you-just-upload-it-to-chatgpt/",
+      "source": "Hacker News (buzzing.cc)",
+      "tag": "ai"
+    },
+    {
+      "title": "[HN] correresmidestino.com",
+      "link": "https://correresmidestino.com/dont-you-just-upload-it-to-chatgpt/",
+      "source": "Hacker News (buzzing.cc)",
+      "tag": "tech"
+    },
+    {
+      "title": "[HN] 12. 恶意软件开发者在其间谍软件中加入了关于核武器和生物武器的内容",
+      "link": "https://twitter.com/jsrailton/status/2064661778978533571",
+      "source": "Hacker News (buzzing.cc)",
+      "tag": "tech"
+    },
+    {
+      "title": "[HN] twitter.com)06-12",
+      "link": "https://twitter.com/jsrailton/status/2064661778978533571",
+      "source": "Hacker News (buzzing.cc)",
+      "tag": "tech"
+    },
+    {
+      "title": "[HN] 13. 稍微改善AI生成的前端界面略显粗糙的问题",
+      "link": "https://envs.net/~volpe/blog/posts/reduce-slop.html",
+      "source": "Hacker News (buzzing.cc)",
+      "tag": "tech"
+    },
+    {
+      "title": "[HN] 15. Ask HN: 为什么Hacker News上会有人推广某种诈骗网站？",
+      "link": "https://news.ycombinator.com/item?id=48506850",
+      "source": "Hacker News (buzzing.cc)",
+      "tag": "security"
+    }
+  ],
+  "crawled_at": "2026-06-13T07:00:18.182904"
+}

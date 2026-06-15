@@ -1,6 +1,27 @@
 {
-  "updated_at": "2026-06-12T07:33:09.074135",
+  "updated_at": "2026-06-15T18:55:27.846035",
   "days": [
+    {
+      "date": "2026-06-15",
+      "count": 54,
+      "ai_count": 15,
+      "security_count": 8,
+      "file": "2026-06-15.json"
+    },
+    {
+      "date": "2026-06-14",
+      "count": 44,
+      "ai_count": 12,
+      "security_count": 2,
+      "file": "2026-06-14.json"
+    },
+    {
+      "date": "2026-06-13",
+      "count": 47,
+      "ai_count": 14,
+      "security_count": 8,
+      "file": "2026-06-13.json"
+    },
     {
       "date": "2026-06-12",
       "count": 50,
